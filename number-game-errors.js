@@ -1,4 +1,5 @@
-let randomNumber = Math.floor(Math.random()) + 1;
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+console.log(randomNumber);
 
 const guesses = document.querySelector('.guesses');
 const lastResult = document.querySelector('.lastResult');
@@ -66,5 +67,6 @@ function resetGame() {
 
   lastResult.style.backgroundColor = 'white';
 
-  randomNumber = Math.floor(Math.random()) + 1;
+  randomNumber = Math.floor(Math.random() * 100) + 1;
+  console.log(randomNumber);
 }
